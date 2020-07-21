@@ -76,7 +76,11 @@ WSGI_APPLICATION = 'iwaenogu.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.path.join(BASE_DIR, 'db.postgresql'),
+        'NAME': 'iwaenogu',
+        'USER': 'otto',
+        'PASSWORD': 'letmeinnow',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
