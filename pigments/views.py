@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
+from django.http import Http404
 from django.template import loader
 
 from .models import Color
@@ -7,18 +8,18 @@ from .models import Color
 
 def index(request):
     colors = Color.objects.order_by('hex_code')
-    template = loader.get_template('colors/index.html')
     context = {
         'colors': colors,
     }
-    return HttpResponse(template.render(context, request))
+    return render(request, 'colors/index.html', context)
 
 def color(request, color_id):
-    return HttpResponse("You're looking at color %s." % color_id)
+    color = get_object_or_404(Color, pk=color_id)
+    return render(request, 'colors/detail.html', {'color': color})
 
-def results(request, question_id):
-    response = "You're looking at the results of question %s."
-    return HttpResponse(response % question_id)
+def pigment(request, color_id, pigment_id):
+    response = "You're looking at the results of color %s."
+    return HttpResponse(response % color_id)
 
-def vote(request, question_id):
-    return HttpResponse("You're voting on question %s." % question_id)
+def vote(request, color_id):
+    return HttpResponse("You're voting on color %s." % color_id)
