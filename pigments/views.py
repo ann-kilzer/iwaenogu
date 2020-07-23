@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.http import Http404
 from django.template import loader
 
-from .models import Color
+from .models import Color, Pigment
 # Create your views here.
 
 def index(request):
@@ -15,7 +15,8 @@ def index(request):
 
 def color(request, color_id):
     color = get_object_or_404(Color, pk=color_id)
-    return render(request, 'colors/detail.html', {'color': color})
+    pigments = Pigment.objects.filter(color=color)
+    return render(request, 'colors/detail.html', {'color': color, 'pigments': pigments})
 
 def pigment(request, color_id, pigment_id):
     response = "You're looking at the results of color %s."

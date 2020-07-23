@@ -13,7 +13,7 @@ class Color(models.Model):
     return '{0} {1}'.format(self.name_ja, self.name_en) 
 
 class Pigment(models.Model):
-  color = models.ForeignKey(Color, on_delete=models.PROTECT)
+  color = models.ForeignKey(Color, on_delete=models.CASCADE)
   hex_code = models.CharField(max_length=6)
   price = models.IntegerField(default=0)
 
