@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Colors</title>
+  </head>
+  <body>
+    {% if colors %}
+
+    {% for color in colors %}
+      <div style="background-color: #{{ color.hex_code }};">
+        <a href="/colors/{{ color.id }}/">{{ color.name_ja }}</a>
+      </div>
+    {% endfor %}
+
+    {% else %}
+    <p>No colors are available.</p>
+    {% endif %}
+  </body>
+</html>
