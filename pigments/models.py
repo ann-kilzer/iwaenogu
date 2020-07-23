@@ -46,4 +46,4 @@ class Pigment(models.Model):
     default=Grain.TWELVE)
 
   def __str__(self):
-    return '{0} {1} {2}'.format(self.pigment_type.label, self.color, self.grain) 
+    return '{0} {1} {2}'.format(self.pigment_type, self.color, self.grain) 
