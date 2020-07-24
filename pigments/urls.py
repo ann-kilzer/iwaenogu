@@ -11,4 +11,8 @@ urlpatterns = [
     path('<int:color_id>/pigments/', views.pigments_subindex, name='pigments_subindex'),
     # ex: /colors/5/pigments/3
     path('<int:color_id>/pigments/<int:pigment_id>/', views.color_pigment, name='color_pigment'),
+    # ex: /colors/5/pigments/3/grains
+    path('<int:color_id>/pigments/<int:pigment_id>/grains', views.grains_subindex, name='grains_subindex'),
+    # ex: /colors/5/pigments/3/grains/5
+    path('<int:color_id>/pigments/<int:pigment_id>/grains/<int:grain_id>', views.color_pigment_grain, name='color_pigment_grain'),
 ]
