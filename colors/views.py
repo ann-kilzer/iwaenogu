@@ -21,12 +21,6 @@ def color(request, color_id):
     categories = set([p.category for p in pigments])
     return render(request, 'colors/color_detail.html', {'color': color, 'pigments': pigments, 'categories': categories})
 
-def categories_subindex(request, color_id):
-    color = get_object_or_404(Color, pk=color_id)
-    pigments = Pigment.objects.filter(color=color)
-    categories = set([p.category for p in pigments])
-    return render(request, 'colors/categories_subindex.html', {'color': color, 'categories': categories})
-
 def category_detail(request, color_id, category_code):
     color = get_object_or_404(Color, pk=color_id)
     category = Category.objects.get(pk=category_code)

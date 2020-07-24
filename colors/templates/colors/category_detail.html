@@ -19,7 +19,7 @@
   
         {% for grain in grains %}
           <div>
-            <a href="/colors/{{ color.id }}/categories/{{category.code}}/grains/{{grain.id}}">{{ grain.label }}</a>
+            <a href="/colors/{{color.id}}/categories/{{category.code}}/grains/{{grain.id}}">{{ grain.label }}</a>
           </div>
         {% endfor %}
     
@@ -29,7 +29,7 @@
 
         <br>
         <br>
-        <a href="/colors/{{color.id}}/categories">Back to {{ color.name_ja }} Categories</a>
+        <a href="/colors/{{color.id}}">Back to {{ color.name_ja }}</a>
     </div>
 
   </body>
