@@ -13,18 +13,19 @@
         <p>{{ color.description_en}}</p>
         <p>#{{ color.hex_code}}</p>
 
+        <h3>Pigment Categories</h3>
+        {% if categories %}
 
-        {% if pigments %}
-
-        {% for pigment in pigments %}
-          <div style="background-color: #{{ pigment.hex_code }}; border-color: black; border-style: outset;">
-            <a href="/colors/{{ color.id }}/pigments/{{pigment.id}}">{{ pigment.category}} - {{ pigment.grain }}</a>
+        {% for category in categories %}
+          <div>
+            <a href="/colors/{{ color.id }}/categories/{{category.code}}">{{ category.name_ja}} - {{ category.name_en }}</a>
           </div>
         {% endfor %}
-    
+  
         {% else %}
-        <p>No pigments defined.</p>
+        <p>No categories defined.</p>
         {% endif %}
+
         <br>
         <br>
         <a href="/colors/">Back to Colors</a>

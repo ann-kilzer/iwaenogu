@@ -8,24 +8,25 @@
     <div style="text-align: center;">
       <h1>{{ color.name_ja }}</h1>
       <h2>{{ color.name_en }}</h2>
+      <h2>{{ category.name_ja }} {{ category.name_en }}</h2>
       <p>{{ color.description_en}}</p>
       <p>#{{ color.hex_code}}</p>
 
-      <h3>Pigment Categories</h3>
-      {% if categories %}
+      <h3>Grain Sizes</h3>
+      {% if grains %}
 
-      {% for category in categories %}
+      {% for grain in grains %}
         <div>
-          <a href="/colors/{{ color.id }}/categories/{{category.code}}">{{ category.name_ja}} - {{ category.name_en }}</a>
+          <a href="/colors/{{ color.id }}/categories/{{category.code}}/grains/{{grain.id}}">{{ grain.label }}</a>
         </div>
       {% endfor %}
   
       {% else %}
-      <p>No categories defined.</p>
+      <p>No grain sizes defined.</p>
       {% endif %}
       <br>
       <br>
-      <a href="/colors/{{color.id}}">Back to {{ color.name_ja }}</a>
+      <a href="/colors/{{color.id}}/categories/{{category.code}}">Back to {{ color.name_ja }} {{ category.name_ja }}</a>
   </div>
   </body>
 </html>
