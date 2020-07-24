@@ -10,3 +10,4 @@ python3 manage.py createsuperuser
 
 # seed data
 python3 manage.py loaddata grains
+python3 manage.py loaddata categories

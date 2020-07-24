@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'colors.apps.ColorsConfig',
     'grains.apps.GrainsConfig',
+    'categories.apps.CategoriesConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
