@@ -31,7 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'pigments.apps.PigmentsConfig',
+    'colors.apps.ColorsConfig',
+    'grains.apps.GrainsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

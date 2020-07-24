@@ -1,5 +1,12 @@
+.vscode
+
 __pycache__/
 
 *.pyc
 
-pigments/__pycache__*
+colors/__pycache__*
+
+
+#emacs cruft
+
+*~
