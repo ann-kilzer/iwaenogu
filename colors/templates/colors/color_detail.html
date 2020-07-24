@@ -18,7 +18,7 @@
 
         {% for pigment in pigments %}
           <div style="background-color: #{{ pigment.hex_code }}; border-color: black; border-style: outset;">
-            <a href="/colors/{{ color.id }}/pigments/{{pigment.id}}">{{ pigment.pigment_type}} - {{ pigment.grain }}</a>
+            <a href="/colors/{{ color.id }}/pigments/{{pigment.id}}">{{ pigment.category}} - {{ pigment.grain }}</a>
           </div>
         {% endfor %}
     
