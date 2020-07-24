@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'colors.apps.ColorsConfig',
     'grains.apps.GrainsConfig',
     'categories.apps.CategoriesConfig',
+    'root.apps.RootConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
