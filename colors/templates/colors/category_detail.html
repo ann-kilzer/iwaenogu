@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Category Detail for {{ color.name_ja }}</title>
+  </head>
+  <body style="background-color: #{{ color.hex_code }};">
+
+
+    <div style="text-align: center;">
+        <h1>{{ color.name_ja }}</h1>
+        <h2>{{ color.name_en }}</h2>
+        <h2>{{ category.name_ja }} {{ category.name_en }}</h2>
+        <p>{{ color.description_en}}</p>
+        <p>#{{ color.hex_code}}</p>
+
+
+        <br>
+        <br>
+        <a href="/colors/{{color.id}}/categories">Back to {{ color.name_ja }} Categories</a>
+    </div>
+
+  </body>
+</html>

@@ -4,6 +4,7 @@ from django.http import Http404
 from django.template import loader
 
 from .models import Color, Pigment
+from categories.models import Category
 # Create your views here.
 
 def index(request):
@@ -18,14 +19,16 @@ def color(request, color_id):
     pigments = Pigment.objects.filter(color=color)
     return render(request, 'colors/color_detail.html', {'color': color, 'pigments': pigments})
 
-def pigments_subindex(request, color_id):
-    response = "You're looking at the pigments subindex of color %s"
-    return HttpResponse(response % color_id)
-
-def color_pigment(request, color_id, pigment_code):
+def categories_subindex(request, color_id):
     color = get_object_or_404(Color, pk=color_id)
-    pigment = Pigment.objects.get(pk=pigment_code)
-    return render(request, 'colors/pigment_detail.html', {'color': color, 'pigment': pigment})
+    pigments = Pigment.objects.filter(color=color)
+    categories = set([p.category for p in pigments])
+    return render(request, 'colors/categories_subindex.html', {'color': color, 'categories': categories})
+
+def category_detail(request, color_id, category_code):
+    color = get_object_or_404(Color, pk=color_id)
+    category = Category.objects.get(pk=category_code)
+    return render(request, 'colors/category_detail.html', {'color': color, 'category': category})
 
 def grains_subindex(request, color_id, pigment_id):
     color = get_object_or_404(Color, pk=color_id)
