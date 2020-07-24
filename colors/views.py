@@ -34,13 +34,6 @@ def category_detail(request, color_id, category_code):
     grains= set([p.grain for p in pigments])
     return render(request, 'colors/category_detail.html', {'color': color, 'category': category, 'grains': grains})
 
-def grains_subindex(request, color_id, category_code):
-    color = get_object_or_404(Color, pk=color_id)
-    category = Category.objects.get(pk=category_code)
-    pigments = Pigment.objects.filter(color=color)
-    grains= set([p.grain for p in pigments])
-    return render(request, 'colors/grains_subindex.html', {'color': color, 'category': category, 'grains': grains})
-
 def grain_detail(request, color_id, category_code, grain_id):
     color = get_object_or_404(Color, pk=color_id)
     category = Category.objects.get(pk=category_code)
