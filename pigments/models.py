@@ -12,11 +12,7 @@ class Color(models.Model):
   def __str__(self):
     return '{0} {1}'.format(self.name_ja, self.name_en) 
 
-class Pigment(models.Model):
-  color = models.ForeignKey(Color, on_delete=models.CASCADE)
-  hex_code = models.CharField(max_length=6)
-  price = models.IntegerField(default=0)
-
+class PigmentType(models.Model):
   class Type(models.TextChoices):
     TENNEN_IWA = 'TI', _('Tennen Iwaenogu 天然岩絵具')
     SHIN_IWA = 'SI', _('Shin Iwaenogu　新岩絵具')
@@ -24,9 +20,19 @@ class Pigment(models.Model):
     SUIHUI = 'SH', _('Suihi Enogu　水飛絵具')
     TENNEN_TSUCHI = 'TT', _('Tennen Tsuchi Enogu　天然土絵具')
 
-  pigment_type = models.CharField(
+  value = models.CharField(
     max_length=2,
-    choices=Type.choices)
+    choices=Type.choices,
+    default=Type.TENNEN_IWA)
+
+  def __str__(self):
+    return '{0}'.format(self.value.label) 
+
+class Pigment(models.Model):
+  color = models.ForeignKey(Color, on_delete=models.CASCADE)
+  pigment_type = models.ForeignKey(PigmentType, on_delete=models.CASCADE)
+  hex_code = models.CharField(max_length=6)
+  price = models.IntegerField(default=0)
 
   class Grain(models.TextChoices):
     FIVE = '5'

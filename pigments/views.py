@@ -28,7 +28,9 @@ def color_pigment(request, color_id, pigment_id):
     return render(request, 'colors/pigment_detail.html', {'color': color, 'pigment': pigment})
 
 def grains_subindex(request, color_id, pigment_id):
-    return HttpResponse("You're looking at color %s %s" % (color_id, pigment_id))
+    color = get_object_or_404(Color, pk=color_id)
+    pigment = Pigment.objects.get(color=color, pk=pigment_id)
+    return render(request, 'colors/pigment_detail.html', {'color': color, 'pigment': pigment})
 
 def color_pigment_grain(request, color_id, pigment_id, grain_id):
     return HttpResponse("You're looking at color %s %s %s" % (color_id, pigment_id, grain_id))
