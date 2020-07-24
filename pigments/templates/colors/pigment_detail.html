@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Colors</title>
+  </head>
+  <body style="background-color: #{{ color.hex_code }};">
+
+
+    <div style="text-align: center;">
+        <h1>{{ color.name_ja }}</h1>
+        <h2>{{ color.name_en }}</h2>
+        <h2>{{pigment.pigment_type}}</h2>
+        <p>{{ color.description_en}}</p>
+        <p>#{{ color.hex_code}}</p>
+
+
+        <a href="/colors/{{color.id}}">Back to {{color.name_ja}}</a>
+    </div>
+
+  </body>
+</html>

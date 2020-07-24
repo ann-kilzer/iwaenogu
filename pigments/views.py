@@ -18,9 +18,15 @@ def color(request, color_id):
     pigments = Pigment.objects.filter(color=color)
     return render(request, 'colors/detail.html', {'color': color, 'pigments': pigments})
 
-def pigment(request, color_id, pigment_id):
-    response = "You're looking at the results of color %s."
+def pigments_subindex(request, color_id):
+    response = "You're looking at the pigments subindex of color %s"
     return HttpResponse(response % color_id)
+
+def color_pigment(request, color_id, pigment_id):
+    color = get_object_or_404(Color, pk=color_id)
+    pigment = Pigment.objects.get(color=color, pk=pigment_id)
+    return render(request, 'colors/pigment_detail.html', {'color': color, 'pigment': pigment})
+
 
 def vote(request, color_id):
     return HttpResponse("You're voting on color %s." % color_id)

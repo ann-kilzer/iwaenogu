@@ -3,12 +3,12 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    # ex: /polls/
+    # ex: /colors/
     path('', views.index, name='index'),
-    # ex: /polls/5/
+    # ex: /colors/5/
     path('<int:color_id>/', views.color, name='color'),
-    # ex: /polls/5/results/
-    path('<int:color_id>/pigments/', views.pigment, name='pigments'),
-    # ex: /polls/5/vote/
-    path('<int:color_id>/vote/', views.vote, name='vote'),
+    # ex: /colors/5/pigments/
+    path('<int:color_id>/pigments/', views.pigments_subindex, name='pigments_subindex'),
+    # ex: /colors/5/pigments/3
+    path('<int:color_id>/pigments/<int:pigment_id>/', views.color_pigment, name='color_pigment'),
 ]
