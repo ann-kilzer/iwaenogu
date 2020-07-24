@@ -10,7 +10,7 @@ urlpatterns = [
     # ex: /colors/5/pigments/
     path('<int:color_id>/pigments/', views.pigments_subindex, name='pigments_subindex'),
     # ex: /colors/5/pigments/3
-    path('<int:color_id>/pigments/<int:pigment_id>/', views.color_pigment, name='color_pigment'),
+    path('<int:color_id>/pigments/<str:pigment_code>/', views.color_pigment, name='color_pigment'),
     # ex: /colors/5/pigments/3/grains
     path('<int:color_id>/pigments/<int:pigment_id>/grains', views.grains_subindex, name='grains_subindex'),
     # ex: /colors/5/pigments/3/grains/5

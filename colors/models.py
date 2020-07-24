@@ -13,6 +13,7 @@ class Color(models.Model):
     return '{0} {1}'.format(self.name_ja, self.name_en) 
 
 class PigmentType(models.Model):
+  code = models.CharField(max_length=2, primary_key=True)
   name_en = models.CharField(max_length=50)
   name_ja = models.CharField(max_length=50)
   description_en = models.CharField(max_length=200)
