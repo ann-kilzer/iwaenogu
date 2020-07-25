@@ -48,8 +48,7 @@ The following sources were very helpful when creating this project. ありがと
 - [Japanese Colors with Kanji](https://colors.japanesewithanime.com/japanese-colors/) is a brilliant and inspiring site. I really love how many variants of Mouse-gray it features.
 - [W3Schools Web Color Picker](https://www.w3schools.com/colors/colors_picker.asp) This is a useful tool for picking web colors.
 - [Maria Tanikawa](https://www.mariatanikawa.com/) My Nihonga Sensei who taught me everything and answers a lot of silly questions. 
-
-
+- [Hamada, Nobuyoshi. 日本の日本の伝統色 - THE TRADITIONAL COLORS OF JAPAN. 株式会社パイ インターナショナル, 2011.](http://pie.co.jp/book/i/4100/) This book helped me match some colors, and gives an excellent understanding of Japanese color combinations.
 
 ## Code Info
 
