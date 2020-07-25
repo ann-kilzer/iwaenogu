@@ -68,5 +68,12 @@
     "fields": {
       "label": "白"
     }
+  },
+  {
+    "model": "grains.Grain",
+    "pk": 100,
+    "fields": {
+      "label": "本朱"
+    }
   }
 ]

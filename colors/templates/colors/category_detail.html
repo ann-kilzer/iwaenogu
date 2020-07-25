@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Category Detail for {{ color.name_ja }}</title>
   </head>
-  <body style="background-color: #{{ color.hex_code }};">
+  <body style="background-color: #{{ color.hex_color }};">
 
 
     <div style="text-align: center;">
@@ -12,7 +12,7 @@
         <h2>{{ color.name_en }}</h2>
         <h2>{{ category.name_ja }} {{ category.name_en }}</h2>
         <p>{{ color.description_en}}</p>
-        <p>#{{ color.hex_code}}</p>
+        <p>#{{ color.hex_color}}</p>
 
         <h3>Grain Sizes</h3>
         {% if grains %}

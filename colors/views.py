@@ -9,7 +9,7 @@ from grains.models import Grain
 # Create your views here.
 
 def index(request):
-    colors = Color.objects.order_by('hex_code')
+    colors = Color.objects.order_by('hex_color')
     context = {
         'colors': colors,
     }

@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <title>Colors</title>
   </head>
-  <body style="background-color: #{{ color.hex_code }};">
-
+  <body style="background-color: #{{ color.hex_color }};">
 
     <div style="text-align: center;">
         <h1>{{ color.name_ja }}</h1>
         <h2>{{ color.name_en }}</h2>
         <p>{{ color.description_en}}</p>
-        <p>#{{ color.hex_code}}</p>
+        <p>#{{ color.hex_color}}</p>
 
         <h3>Pigment Categories</h3>
         {% if categories %}
