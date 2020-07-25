@@ -5,7 +5,7 @@
 python3 manage.py migrate
 
 # color picker plugin
-#python3 manage.py collectstatic
+python3 manage.py collectstatic
 
 # create admin
 #python3 manage.py createsuperuser --username
