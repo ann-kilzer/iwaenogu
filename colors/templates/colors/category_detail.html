@@ -15,11 +15,11 @@
         <p>{{ color.hex_color}}</p>
 
         <h3>Grain Sizes</h3>
-        {% if grains %}
+        {% if pigments %}
   
-        {% for grain in grains %}
-          <div>
-            <a href="/colors/{{color.id}}/categories/{{category.code}}/grains/{{grain.id}}">{{ grain.label }}</a>
+        {% for pigment in pigments %}
+          <div style="background-color: {{ pigment.hex_color }}; border-style:solid; border-width: 1px;">
+            <a href="/colors/{{color.id}}/categories/{{category.code}}/grains/{{pigment.grain.id}}">{{ pigment.grain.label }}</a>
           </div>
         {% endfor %}
     
