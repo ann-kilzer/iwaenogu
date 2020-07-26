@@ -17,7 +17,7 @@ No, why do you think I write software? To pay for art classes ;)
 
 #### How can I learn more about Nihonga?
 
-The best place to see Nihonga paintings is at the Yamatane Museum in Shibuya. You might also see some at the Metropolitan Museum of Art in NYC, or the Boston Museum of Fine Art.
+The best place to see Nihonga paintings is at the [Yamatane Museum](http://www.yamatane-museum.jp/english/) in Shibuya. You might also see some at the Metropolitan Museum of Art in NYC, or the Boston Museum of Fine Art.
 
 If you'd like to try a lesson, check out my Sensei [Maria Tanikawa](https://www.mariatanikawa.com/nihonga-class/) for in-person or online lessons in English or Japanese. [PIGMENT Tokyo](https://pigment.tokyo/) also offers great classes on a variety of Japanese arts. English translation is available for an additional fee.
 
@@ -43,7 +43,7 @@ Outside Japan
 
 The following sources were very helpful when creating this project. ありがとうございます！！！
 
-- [Nakagawa Gofun Webite](http://nakagawa-gofun.co.jp) for understanding the various pigment types.
+- [Nakagawa Gofun Website](http://nakagawa-gofun.co.jp) for understanding the various pigment types.
 - [Pigment Tokyo](https://pigment.tokyo/) Another great source for information on pigment types and colors
 - [Japanese Colors with Kanji](https://colors.japanesewithanime.com/japanese-colors/) is a brilliant and inspiring site. I really love how many variants of Mouse-gray it features.
 - [W3Schools Web Color Picker](https://www.w3schools.com/colors/colors_picker.asp) This is a useful tool for picking web colors.
