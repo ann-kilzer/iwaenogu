@@ -28,7 +28,7 @@ I recommend trying a class before investing in materials, but major suppliers in
 Tokyo
 - [Uematsu Art Supply](https://www.shibuyamiyamasu.jp/uematsu/main.html)* in Shibuya (Very friendly but no English)
 - [Seikaido](https://www.sekaido.co.jp/) in Shinjuku, Tokyo
-- [Pigment Tokyo](https://pigment.tokyo/)* in Shinagawa Seaside (English friendly)
+- [PIGMENT Tokyo](https://pigment.tokyo/)* in Shinagawa Seaside (English friendly)
 - [Kinkaido](http://www2.gol.com/users/tokuouken/) in Ueno / Taito
 - [Kiya](http://kiya.ehoh.net/) in Bunkyo-ku
 - [Matsuyoshi Enoguten](http://www.matsuyoshienogu.co.jp/) in Chiyoda
