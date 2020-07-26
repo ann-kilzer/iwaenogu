@@ -23,20 +23,38 @@ If you'd like to try a lesson, check out my Sensei [Maria Tanikawa](https://www.
 
 #### Where can I get supplies?
 
-I recommend trying a class before investing in materials, but major suppliers include:
+I recommend trying a class before investing in materials, but major suppliers include the following. (* for my favs)
 
 Tokyo
-- [Uematsu Art Supply](https://www.shibuyamiyamasu.jp/uematsu/main.html) in Shibuya (Very friendly but no English)
+- [Uematsu Art Supply](https://www.shibuyamiyamasu.jp/uematsu/main.html)* in Shibuya (Very friendly but no English)
 - [Seikaido](https://www.sekaido.co.jp/) in Shinjuku, Tokyo
-- [Pigment Tokyo](https://pigment.tokyo/) in Shinagawa Seaside, Tokyo (English friendly)
-- [Tokuouken](http://www2.gol.com/users/tokuouken/) in Ueno
+- [Pigment Tokyo](https://pigment.tokyo/)* in Shinagawa Seaside (English friendly)
+- [Kinkaido](http://www2.gol.com/users/tokuouken/) in Ueno / Taito
 - [Kiya](http://kiya.ehoh.net/) in Bunkyo-ku
+- [Matsuyoshi Enoguten](http://www.matsuyoshienogu.co.jp/) in Chiyoda
+
+Kanagawa
+- [Sankichi](https://www.sankichi.com/) in Yokohama
+
+Nagoya / Aichi
+- [Morisou](https://www.nihongazaimorisou.com/)
+- [Tanseido](http://www.tanseido.jp/category/70/)
 
 Kyoto
-- [Nakagawa Gofun](http://nakagawa-gofun.co.jp/index.html) in Kyoto 
+- [Nakagawa Gofun](http://nakagawa-gofun.co.jp/index.html)
+- [Kissho Nihonga](http://www.kissho-nihonga.co.jp/)
+- [Saiun-do](https://goo.gl/maps/qHfG8TaKKakGaHrm6)
+- [Ebisu Gazai](http://www.ebisuya-gazai.com/)
+
+Osaka
+- [Tanseido](http://www.tanseido.jp/category/70/)
+
+Kummamoto
+- [Bunrindo](https://www.bunrindou.com/)
 
 Outside Japan
 - [Kremer Pigment](https://shop.kremerpigments.com/en/pigments/iwa-enogu-mineral-pigments/) -- Supplies limited but pretty good for outside Japan. NYC, Germany
+- [Handelshuset Nidaros](https://nidaros-handel.dk/iwa-enogu-pigmenter-169/) -- Denmark
 
 
 ### Sources & Inspiration
