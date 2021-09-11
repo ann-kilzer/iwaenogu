@@ -77,9 +77,16 @@ And here we start the code parts...
 - Django
 
 
+### How to run it locally: 
+
+```sh
+pip3 install -r requirements.txt
+python manage.py runserver
+```
+
 ### DB Setup
 
-```
+``` sh
 psql
 CREATE DATABASE iwaenogu;
 CREATE USER otto password 'letmeinnow';
