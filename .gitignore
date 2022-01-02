@@ -10,3 +10,5 @@ colors/__pycache__*
 #emacs cruft
 
 *~
+
+.env
