@@ -80,7 +80,7 @@ And here we start the code parts...
 ### How to run it locally: 
 
 ```sh
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 python manage.py runserver
 ```
 
@@ -91,4 +91,10 @@ psql
 CREATE DATABASE iwaenogu;
 CREATE USER otto password 'letmeinnow';
 GRANT ALL ON DATABASE iwaenogu TO otto;
+```
+
+Exit postgres and run the migrations:
+
+``` sh
+python manage.py migrate
 ```
