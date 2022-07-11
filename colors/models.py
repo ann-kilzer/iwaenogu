@@ -19,7 +19,7 @@ class Color(models.Model):
   name_ja = models.CharField(max_length=50)
   description_en = models.CharField(max_length=200)
   hex_color = ColorField(default='#ffffff')
-  color_family = models.ForeignKey('ColorFamily', on_delete=models.DO_NOTHING, default=0)
+  color_family = models.ForeignKey('ColorFamily', on_delete=models.CASCADE, default=0)
 
   def name(self):
     return '{0} {1}'.format(self.name_ja, self.name_en) 
