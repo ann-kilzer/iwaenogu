@@ -1,0 +1,68 @@
+[
+  {
+      "name_en": "Red",
+      "name_ja": "赤色",
+      "hex_color": "#FF3500",
+      "order": 0
+  },
+  {
+      "name_en": "Orange",
+      "name_ja": "オレンジ色",
+      "hex_color": "#FF8000",
+      "order": 1
+  },
+  {
+      "name_en": "Yellow",
+      "name_ja": "黄色",
+      "hex_color": "#FFB31A",
+      "order": 2
+  },
+  {
+      "name_en": "Green",
+      "name_ja": "緑色",
+      "hex_color": "#3D9960",
+      "order": 3
+  },
+  {
+      "name_en": "Blue",
+      "name_ja": "青色",
+      "hex_color": "#1A73FF",
+      "order": 4
+  },
+  {
+      "name_en": "Purple",
+      "name_ja": "紫色",
+      "hex_color": "#7A4DFF",
+      "order": 5
+  },
+  {
+      "name_en": "Pink",
+      "name_ja": "ピンク色",
+      "hex_color": "#FFEEED",
+      "order": 6
+  },
+  {
+      "name_en": "Brown",
+      "name_ja": "茶色",
+      "hex_color": "#804526",
+      "order": 7
+  },
+  {
+      "name_en": "Grey",
+      "name_ja": "鼠色",
+      "hex_color": "#737373",
+      "order": 8
+  },
+  {
+      "name_en": "White",
+      "name_ja": "白",
+      "hex_color": "#FFFFFF",
+      "order": 9
+  },
+  {
+      "name_en": "Black",
+      "name_ja": "黒",
+      "hex_color": "#000000",
+      "order": 10
+  }
+]
