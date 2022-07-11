@@ -24,7 +24,7 @@ def color(request, color_id):
 def category_detail(request, color_id, category_code):
     color = get_object_or_404(Color, pk=color_id)
     category = Category.objects.get(pk=category_code)
-    pigments = Pigment.objects.filter(color=color)
+    pigments = Pigment.objects.filter(color=color, category=category).order_by('grain')
     grains= set([p.grain for p in pigments])
     return render(request, 'colors/category_detail.html', {'color': color, 'category': category, 'grains': grains, 'pigments': pigments})
 
