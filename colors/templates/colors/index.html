@@ -7,10 +7,21 @@
   <body>
     {% if colors %}
 
-    {% for color in colors %}
-      <div style="background-color: {{ color.hex_color }};">
-        <a href="/colors/{{ color.id }}/">{{ color.name_ja }}</a>
-      </div>
+    {% for color_family in color_families %}
+
+      <div style="background-color: {{ color_family.hex_color }};">
+        <h2>{{ color_family.name_ja }}</h2>
+
+        {% for color in colors %}
+          {% if color.color_family == color_family %}
+            <div style="background-color: {{ color.hex_color }};">
+              <a href="/colors/{{ color.id }}/">{{ color.name_ja }}</a>
+           </div>
+          {% endif %}
+
+        </div>
+      {% endfor %}
+
     {% endfor %}
 
     {% else %}

@@ -2,11 +2,26 @@ from django.db import models
 from colorfield.fields import ColorField
 
 # Create your models here.
+class ColorFamily(models.Model):
+  name_en = models.CharField(max_length=50)
+  name_ja = models.CharField(max_length=50)
+  hex_color = ColorField(default='#ffffff')
+  order = models.IntegerField()
+  
+  def name(self):
+    return '{0} {1}'.format(self.name_ja, self.name_en) 
+
+  def __str__(self):
+    return '{0} {1} {2}'.format(self.name_ja, self.name_en, self.hex_color) 
+
 class Color(models.Model):
   name_en = models.CharField(max_length=50)
   name_ja = models.CharField(max_length=50)
   description_en = models.CharField(max_length=200)
   hex_color = ColorField(default='#ffffff')
+  
+  white = ColorFamily.objects.get(name_en='White')
+  color_family = models.ForeignKey('ColorFamily', on_delete=models.DO_NOTHING, default=white.id)
 
   def name(self):
     return '{0} {1}'.format(self.name_ja, self.name_en) 

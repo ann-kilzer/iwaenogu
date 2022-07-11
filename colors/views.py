@@ -3,15 +3,17 @@ from django.http import HttpResponse
 from django.http import Http404
 from django.template import loader
 
-from .models import Color, Pigment
+from .models import Color, ColorFamily, Pigment
 from categories.models import Category
 from grains.models import Grain
 # Create your views here.
 
 def index(request):
     colors = Color.objects.order_by('hex_color')
+    color_families = ColorFamily.objects.order_by('order')
     context = {
         'colors': colors,
+        'color_families': color_families,
     }
     return render(request, 'colors/index.html', context)
 
