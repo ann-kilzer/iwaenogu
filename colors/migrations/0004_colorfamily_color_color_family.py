@@ -25,6 +25,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='color',
             name='color_family',
-            field=models.ForeignKey(default=9, on_delete=django.db.models.deletion.DO_NOTHING, to='colors.colorfamily'),
+            field=models.ForeignKey(default=0, on_delete=django.db.models.deletion.DO_NOTHING, to='colors.colorfamily'),
         ),
     ]
