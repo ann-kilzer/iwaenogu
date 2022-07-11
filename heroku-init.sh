@@ -1,6 +1,6 @@
 #! /bin/sh
 
-python manage.py migrate
+python manage.py migrate --noinput
 
 # create admin
 #python3 manage.py createsuperuser --username
