@@ -10,11 +10,14 @@
     {% for color_family in color_families %}
 
       <div style="background-color: {{ color_family.hex_color }};">
-        <h2>{{ color_family.name_ja }}</h2>
+        <h2 class="{% if color_family.dark_mode %}dark{% endif %}">{{ color_family.name_ja }}</h2>
 
         {% for color in colors %}
           {% if color.color_family == color_family %}
-            <div style="background-color: {{ color.hex_color }};">
+            <div 
+              style="background-color: {{ color.hex_color }};" 
+              class="{% if color.dark_mode %}dark{% endif %}"
+            >
               <a href="/colors/{{ color.id }}/">{{ color.name_ja }}</a>
            </div>
           {% endif %}
@@ -28,4 +31,22 @@
     <p>No colors are available.</p>
     {% endif %}
   </body>
+
+  <style>
+    .dark {
+      color: white;   
+    }
+    .dark a:link{
+      color: white;
+    }
+    .dark a:visited {
+      color: whitesmoke;
+    }
+    a:link, a:visited {
+      color: #333333;
+    }
+    a:visited {
+      color: black;
+    }
+  </style>
 </html>

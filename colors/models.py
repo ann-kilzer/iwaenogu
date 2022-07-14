@@ -7,6 +7,7 @@ class ColorFamily(models.Model):
   name_ja = models.CharField(max_length=50)
   hex_color = ColorField(default='#ffffff')
   order = models.IntegerField()
+  dark_mode = models.BooleanField(default=False)
   
   def name(self):
     return '{0} {1}'.format(self.name_ja, self.name_en) 
