@@ -1,6 +1,7 @@
 [
   {
     "model": "colors.ColorFamily",
+    "pk": 23,
     "fields": {
       "name_en": "Red",
       "name_ja": "赤色",
@@ -10,6 +11,7 @@
   },
   {
     "model": "colors.ColorFamily",
+    "pk": 24,
     "fields": {
       "name_en": "Orange",
       "name_ja": "オレンジ色",
@@ -19,6 +21,7 @@
   },
   {
     "model": "colors.ColorFamily",
+    "pk": 25,
     "fields": {
       "name_en": "Yellow",
       "name_ja": "黄色",
@@ -28,6 +31,7 @@
   },
   {
     "model": "colors.ColorFamily",
+    "pk": 26,
     "fields": {
       "name_en": "Green",
       "name_ja": "緑色",
@@ -37,6 +41,7 @@
   },
   {
     "model": "colors.ColorFamily",
+    "pk": 27,
     "fields": {
       "name_en": "Blue",
       "name_ja": "青色",
@@ -46,6 +51,7 @@
   },
   {
     "model": "colors.ColorFamily",
+    "pk": 28,
     "fields": {
       "name_en": "Purple",
       "name_ja": "紫色",
@@ -55,6 +61,7 @@
   },
   {
     "model": "colors.ColorFamily",
+    "pk": 29,
     "fields": {
       "name_en": "Pink",
       "name_ja": "ピンク色",
@@ -64,6 +71,7 @@
   },
   {
     "model": "colors.ColorFamily",
+    "pk": 30,
     "fields": {
       "name_en": "Brown",
       "name_ja": "茶色",
@@ -73,6 +81,7 @@
   },
   {
     "model": "colors.ColorFamily",
+    "pk": 31,
     "fields": {
       "name_en": "Grey",
       "name_ja": "鼠色",
@@ -82,6 +91,7 @@
   },
   {
     "model": "colors.ColorFamily",
+    "pk": 32,
     "fields": {
       "name_en": "White",
       "name_ja": "白",
@@ -91,11 +101,837 @@
   },
   {
     "model": "colors.ColorFamily",
+    "pk": 33,
     "fields": {
       "name_en": "Black",
       "name_ja": "黒",
       "hex_color": "#000000",
       "order": 10
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 1,
+    "fields": {
+      "name_en": "Iwa Nezumi",
+      "name_ja": "岩鼠",
+      "description_en": "Rock Mouse",
+      "hex_color": "#8B8B8B",
+      "color_family": 31
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 2,
+    "fields": {
+      "name_en": "Akacha",
+      "name_ja": "赤茶",
+      "description_en": "Burnt Orange",
+      "hex_color": "#D95A24",
+      "color_family": 24
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 3,
+    "fields": {
+      "name_en": "Uguisu",
+      "name_ja": "鶯",
+      "description_en": "Nightengale Green",
+      "hex_color": "#678131",
+      "color_family": 26
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 4,
+    "fields": {
+      "name_en": "Gunjo",
+      "name_ja": "群青",
+      "description_en": "Azurite",
+      "hex_color": "#0052CC",
+      "color_family": 27
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 5,
+    "fields": {
+      "name_en": "Shinsha",
+      "name_ja": "辰砂",
+      "description_en": "Cinnabar",
+      "hex_color": "#993333",
+      "color_family": 23
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 6,
+    "fields": {
+      "name_en": "Fuji Murasaki",
+      "name_ja": "藤紫（二)",
+      "description_en": "Wisteria 2",
+      "hex_color": "#875F9A",
+      "color_family": 28
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 7,
+    "fields": {
+      "name_en": "Sakura Nezumi",
+      "name_ja": "桜鼠",
+      "description_en": "Pink Mouse",
+      "hex_color": "#DBBCCB",
+      "color_family": 31
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 8,
+    "fields": {
+      "name_en": "Iwa Momo",
+      "name_ja": "岩桃",
+      "description_en": "Rock Peach",
+      "hex_color": "#ECACCB",
+      "color_family": 29
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 9,
+    "fields": {
+      "name_en": "Rikyu Nezumi",
+      "name_ja": "利久鼠",
+      "description_en": "Blue Mouse Grey",
+      "hex_color": "#99B7BB",
+      "color_family": 31
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 10,
+    "fields": {
+      "name_en": "Iwa Beni",
+      "name_ja": "岩紅",
+      "description_en": "Rock Red",
+      "hex_color": "#FF541A",
+      "color_family": 23
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 11,
+    "fields": {
+      "name_en": "Beni Shinsha",
+      "name_ja": "紅辰砂",
+      "description_en": "Brick Red",
+      "hex_color": "#83201F",
+      "color_family": 23
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 12,
+    "fields": {
+      "name_en": "Odo",
+      "name_ja": "黄土",
+      "description_en": "Yellow Earth",
+      "hex_color": "#D5B85C",
+      "color_family": 25
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 13,
+    "fields": {
+      "name_en": "Kabacha",
+      "name_ja": "樺茶",
+      "description_en": "Yellow Tea",
+      "hex_color": "#FFC121",
+      "color_family": 25
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 14,
+    "fields": {
+      "name_en": "Kusa Rokusho",
+      "name_ja": "草緑青",
+      "description_en": "Grass Green",
+      "hex_color": "#A3F390",
+      "color_family": 26
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 15,
+    "fields": {
+      "name_en": "Koko wakaba rokusho",
+      "name_ja": "黄口若葉緑青",
+      "description_en": "Yellow Grass",
+      "hex_color": "#BEFF80",
+      "color_family": 26
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 16,
+    "fields": {
+      "name_en": "Uraha Rokusho",
+      "name_ja": "裏葉緑青",
+      "description_en": "Underleaf Green",
+      "hex_color": "#CFFCDA",
+      "color_family": 26
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 17,
+    "fields": {
+      "name_en": "Gosu",
+      "name_ja": "呉須",
+      "description_en": "Gosu",
+      "hex_color": "#0D0F4D",
+      "color_family": 27
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 18,
+    "fields": {
+      "name_en": "Ko gunroku",
+      "name_ja": "濃群緑",
+      "description_en": "Teal",
+      "hex_color": "#0F909F",
+      "color_family": 27
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 19,
+    "fields": {
+      "name_en": "Mizu Gunroku",
+      "name_ja": "水群緑",
+      "description_en": "Water Teal",
+      "hex_color": "#218DAB",
+      "color_family": 27
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 20,
+    "fields": {
+      "name_en": "Mizuasagi",
+      "name_ja": "水浅黄",
+      "description_en": "Water Blue",
+      "hex_color": "#66AACB",
+      "color_family": 27
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 21,
+    "fields": {
+      "name_en": "Iwa shiromidori",
+      "name_ja": "岩白緑",
+      "description_en": "Rock Light Blue",
+      "hex_color": "#79C6EC",
+      "color_family": 27
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 22,
+    "fields": {
+      "name_en": "Seiji-iro",
+      "name_ja": "青磁色",
+      "description_en": "Celadon",
+      "hex_color": "#9BDFE2",
+      "color_family": 27
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 23,
+    "fields": {
+      "name_en": "Iwa kon",
+      "name_ja": "岩紺",
+      "description_en": "Night Blue",
+      "hex_color": "#293F7E",
+      "color_family": 27
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 24,
+    "fields": {
+      "name_en": "Hatobairo",
+      "name_ja": "鳩羽色",
+      "description_en": "Pigeon Wing Color",
+      "hex_color": "#846B99",
+      "color_family": 28
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 25,
+    "fields": {
+      "name_en": "Nama Maruko",
+      "name_ja": "生円子",
+      "description_en": "Magenta",
+      "hex_color": "#D2489A",
+      "color_family": 29
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 26,
+    "fields": {
+      "name_en": "Awaguchi botan",
+      "name_ja": "淡口牡丹",
+      "description_en": "Light Peony",
+      "hex_color": "#CA42AC",
+      "color_family": 29
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 27,
+    "fields": {
+      "name_en": "Koikuchi botan",
+      "name_ja": "濃口牡丹",
+      "description_en": "Dark Peony",
+      "hex_color": "#9A2390",
+      "color_family": 29
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 28,
+    "fields": {
+      "name_en": "Azukicha",
+      "name_ja": "小豆茶",
+      "description_en": "Azuki Bean",
+      "hex_color": "#572A2A",
+      "color_family": 30
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 29,
+    "fields": {
+      "name_en": "Gancha",
+      "name_ja": "岩茶",
+      "description_en": "Rock Brown",
+      "hex_color": "#804001",
+      "color_family": 30
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 30,
+    "fields": {
+      "name_en": "Iwa taisha",
+      "name_ja": "岩岱赭",
+      "description_en": "Medium Brown",
+      "hex_color": "#A5522D",
+      "color_family": 30
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 31,
+    "fields": {
+      "name_en": "Murasaki nezu",
+      "name_ja": "紫鼠",
+      "description_en": "Purple Mouse Grey",
+      "hex_color": "#CBBFD5",
+      "color_family": 31
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 32,
+    "fields": {
+      "name_en": "Sugi hairo",
+      "name_ja": "杉葉色",
+      "description_en": "Cedar Leaf Color",
+      "hex_color": "#44563C",
+      "color_family": 26
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 33,
+    "fields": {
+      "name_en": "Gun-roku",
+      "name_ja": "群録",
+      "description_en": "Azurite & Malachite",
+      "hex_color": "#00655B",
+      "color_family": 26
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 34,
+    "fields": {
+      "name_en": "Asagi gunjo",
+      "name_ja": "浅黄群青",
+      "description_en": "Deep Blue",
+      "hex_color": "#105D9C",
+      "color_family": 27
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 35,
+    "fields": {
+      "name_en": "Kuro Gunjo",
+      "name_ja": "黒群青",
+      "description_en": "Black Ultramarine",
+      "hex_color": "#19285B",
+      "color_family": 27
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 36,
+    "fields": {
+      "name_en": "Iwa Kuro",
+      "name_ja": "岩黒",
+      "description_en": "Rock Black",
+      "hex_color": "#262626",
+      "color_family": 33
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 37,
+    "fields": {
+      "name_en": "Iwa Daidai",
+      "name_ja": "岩橙",
+      "description_en": "Rock Orange",
+      "hex_color": "#FF8C19",
+      "color_family": 24
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 38,
+    "fields": {
+      "name_en": "Hakusuimatsu",
+      "name_ja": "白翠末",
+      "description_en": "Amazonite",
+      "hex_color": "#D3FFEE",
+      "color_family": 26
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 39,
+    "fields": {
+      "name_en": "Akakuchi-Honshu",
+      "name_ja": "赤口本朱",
+      "description_en": "Mercury Sulfide",
+      "hex_color": "#FF3300",
+      "color_family": 23
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 40,
+    "fields": {
+      "name_en": "Iwa Kaba",
+      "name_ja": "岩樺",
+      "description_en": "Yellow Orange",
+      "hex_color": "#FEB11C",
+      "color_family": 24
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 41,
+    "fields": {
+      "name_en": "Kicha",
+      "name_ja": "黄茶",
+      "description_en": "Amber",
+      "hex_color": "#FFC121",
+      "color_family": 25
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 42,
+    "fields": {
+      "name_en": "Iwaki",
+      "name_ja": "岩黄",
+      "description_en": "Lemon",
+      "hex_color": "#FEFF65",
+      "color_family": 25
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 43,
+    "fields": {
+      "name_en": "Aoguchi Bi Iwa murasaki",
+      "name_ja": "青口美岩紫",
+      "description_en": "Violet",
+      "hex_color": "#663BBA",
+      "color_family": 28
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 44,
+    "fields": {
+      "name_en": "Chojicha",
+      "name_ja": "丁子茶",
+      "description_en": "Tiger's Eye",
+      "hex_color": "#8E583C",
+      "color_family": 30
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 45,
+    "fields": {
+      "name_en": "Iwakuro Rokusho",
+      "name_ja": "岩黒緑青",
+      "description_en": "Dark Green",
+      "hex_color": "#203E29",
+      "color_family": 26
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 46,
+    "fields": {
+      "name_en": "Aokuchi Souroku",
+      "name_ja": "青口草緑",
+      "description_en": "Fern",
+      "hex_color": "#516E41",
+      "color_family": 26
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 47,
+    "fields": {
+      "name_en": "Aoishi Ji-iro",
+      "name_ja": "青石磁色",
+      "description_en": "Blue Celadon",
+      "hex_color": "#5DDCFF",
+      "color_family": 27
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 48,
+    "fields": {
+      "name_en": "Iwa hada",
+      "name_ja": "岩肌",
+      "description_en": "Fair skin tone",
+      "hex_color": "#F9CDA1",
+      "color_family": 25
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 49,
+    "fields": {
+      "name_en": "Suishomatsu",
+      "name_ja": "水晶末",
+      "description_en": "Crystal",
+      "hex_color": "#F4EFE1",
+      "color_family": 32
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 50,
+    "fields": {
+      "name_en": "Iwa Kuro",
+      "name_ja": "岩黒",
+      "description_en": "Iron Oxide",
+      "hex_color": "#152123",
+      "color_family": 33
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 51,
+    "fields": {
+      "name_en": "Iwa Kincha",
+      "name_ja": "岩金茶",
+      "description_en": "Gold Tea",
+      "hex_color": "#D1902C",
+      "color_family": 30
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 52,
+    "fields": {
+      "name_en": "Meno matsu",
+      "name_ja": "瑪瑙末",
+      "description_en": "Agate",
+      "hex_color": "#F5B687",
+      "color_family": 24
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 53,
+    "fields": {
+      "name_en": "Midorimenou",
+      "name_ja": "緑瑪瑙",
+      "description_en": "Blood Stone",
+      "hex_color": "#B3CEAC",
+      "color_family": 26
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 54,
+    "fields": {
+      "name_en": "Kihekigyoku",
+      "name_ja": "黄碧玉",
+      "description_en": "Epidote",
+      "hex_color": "#C6B87A",
+      "color_family": 25
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 55,
+    "fields": {
+      "name_en": "Iwajiro",
+      "name_ja": "岩白",
+      "description_en": "Rock White",
+      "hex_color": "#F0EFF4",
+      "color_family": 32
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 56,
+    "fields": {
+      "name_en": "Zougeiro",
+      "name_ja": "象牙色",
+      "description_en": "Carnelian",
+      "hex_color": "#FEEAD1",
+      "color_family": 32
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 57,
+    "fields": {
+      "name_en": "Gin Nezumi",
+      "name_ja": "銀鼠",
+      "description_en": "Silver Mouse Grey",
+      "hex_color": "#9DA79A",
+      "color_family": 31
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 58,
+    "fields": {
+      "name_en": "Koikuchi Nezumi",
+      "name_ja": "濃口鼠",
+      "description_en": "Jasper",
+      "hex_color": "#847967",
+      "color_family": 31
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 59,
+    "fields": {
+      "name_en": "Akakuchi Taisha",
+      "name_ja": "赤口岱赭",
+      "description_en": "Rust",
+      "hex_color": "#AC3F08",
+      "color_family": 23
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 60,
+    "fields": {
+      "name_en": "Kogecha",
+      "name_ja": "焦茶",
+      "description_en": "Scorched Brown",
+      "hex_color": "#453023",
+      "color_family": 30
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 61,
+    "fields": {
+      "name_en": "Kuro Rokusho",
+      "name_ja": "黒緑青",
+      "description_en": "Black Green",
+      "hex_color": "#0E3D32",
+      "color_family": 26
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 62,
+    "fields": {
+      "name_en": "Uguisu Charoku",
+      "name_ja": "鶯茶緑",
+      "description_en": "Dark Olive",
+      "hex_color": "#65663D",
+      "color_family": 26
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 63,
+    "fields": {
+      "name_en": "Ki Charoku",
+      "name_ja": "黄茶緑",
+      "description_en": "Old Gold",
+      "hex_color": "#CEBE23",
+      "color_family": 25
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 64,
+    "fields": {
+      "name_en": "Kincha",
+      "name_ja": "金茶",
+      "description_en": "Gold Tea",
+      "hex_color": "#DA8A0C",
+      "color_family": 30
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 65,
+    "fields": {
+      "name_en": "Kikuchi Uraha",
+      "name_ja": "黄口裏葉",
+      "description_en": "Emerald",
+      "hex_color": "#73CE75",
+      "color_family": 26
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 66,
+    "fields": {
+      "name_en": "Wakaba",
+      "name_ja": "若葉",
+      "description_en": "Fresh Leaves",
+      "hex_color": "#9FC214",
+      "color_family": 26
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 67,
+    "fields": {
+      "name_en": "Souroku",
+      "name_ja": "草緑",
+      "description_en": "Grass Green",
+      "hex_color": "#5C8409",
+      "color_family": 26
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 68,
+    "fields": {
+      "name_en": "Yaki Rokusho",
+      "name_ja": "焼緑青",
+      "description_en": "Patina",
+      "hex_color": "#496641",
+      "color_family": 26
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 69,
+    "fields": {
+      "name_en": "Matsuba Rokusho",
+      "name_ja": "松葉緑青",
+      "description_en": "Malachite - Pine Needle Green",
+      "hex_color": "#49A95F",
+      "color_family": 26
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 70,
+    "fields": {
+      "name_en": "Rokusho",
+      "name_ja": "緑青",
+      "description_en": "Verdigris",
+      "hex_color": "#3C884F",
+      "color_family": 26
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 71,
+    "fields": {
+      "name_en": "Yamabuki",
+      "name_ja": "山吹",
+      "description_en": "Sunshine",
+      "hex_color": "#FEDA1D",
+      "color_family": 25
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 72,
+    "fields": {
+      "name_en": "Iwa Aka",
+      "name_ja": "岩赤",
+      "description_en": "Vermillion",
+      "hex_color": "#DA291C",
+      "color_family": 23
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 73,
+    "fields": {
+      "name_en": "Bi Gunjo",
+      "name_ja": "美群青",
+      "description_en": "Ultramarine",
+      "hex_color": "#39229E",
+      "color_family": 27
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 74,
+    "fields": {
+      "name_en": "Usukuchi Murasaki",
+      "name_ja": "淡口紫",
+      "description_en": "Light Purple",
+      "hex_color": "#B483AE",
+      "color_family": 28
+    }
+  },
+  {
+    "model": "colors.color",
+    "pk": 75,
+    "fields": {
+      "name_en": "Usukuchi Iwaki",
+      "name_ja": "淡口岩黄",
+      "description_en": "Canary",
+      "hex_color": "#FAED8E",
+      "color_family": 25
     }
   }
 ]
