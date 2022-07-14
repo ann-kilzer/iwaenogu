@@ -20,6 +20,7 @@ class Color(models.Model):
   description_en = models.CharField(max_length=200)
   hex_color = ColorField(default='#ffffff')
   color_family = models.ForeignKey('ColorFamily', on_delete=models.CASCADE, default=0)
+  dark_mode = models.BooleanField(default=False)
 
   def name(self):
     return '{0} {1}'.format(self.name_ja, self.name_en) 
@@ -33,6 +34,7 @@ class Pigment(models.Model):
   grain = models.ForeignKey('grains.Grain', on_delete=models.CASCADE, )
   hex_color = ColorField(default='#ffffff')
   price = models.IntegerField(default=0)
+  dark_mode = models.BooleanField(default=False)
 
   def __str__(self):
     return '{0} {1} ({2}) {3}'.format(self.category, self.color.name(), self.grain, self.hex_color) 
