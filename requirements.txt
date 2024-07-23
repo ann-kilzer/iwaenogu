@@ -1,4 +1,4 @@
-Django==4.1.7
+Django==4.1.13
 django-extensions==3.0.3
 gunicorn==22.0.0
 django-heroku==0.3.1
