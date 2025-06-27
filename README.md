@@ -2,7 +2,7 @@
 
 Goal: Keep track of nihonga pigments to avoid wasting money.
 
-Demo on Heroku: https://iwaenogu.herokuapp.com/
+Demo on Heroku: (Taken down after loss of free tier)
 
 #### What is Nihonga?
 Nihonga 日本画 is a style of painting defined in 19th century Japan. After opening to the west in the Meiji era, Japan sought to differentiate between Western style paintings (Yoga) and Japanese style (Nihonga). Thus this style of is very recent, but looks back at the history of Japanese art.
