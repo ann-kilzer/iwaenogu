@@ -1,14 +1,12 @@
 #! /bin/sh
 
-
-# todo -- check environment and swap to python3 only on OS X
-python3 manage.py migrate
+python manage.py migrate
 
 
 # create admin
-python3 manage.py createsuperuser
+python manage.py createsuperuser
 
 # seed data
-python3 manage.py loaddata grains
-python3 manage.py loaddata categories
-python3 manage.py loaddata colors
+python manage.py loaddata grains
+python manage.py loaddata categories
+python manage.py loaddata colors
