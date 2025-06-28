@@ -12,3 +12,4 @@ colors/__pycache__*
 *~
 
 .env
+.vercel

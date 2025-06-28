@@ -1,9 +1,9 @@
 #! /bin/sh
 
-python manage.py migrate --noinput
+python3 manage.py migrate --noinput
 
 # color picker plugin
-python manage.py collectstatic --noinput
+python3 manage.py collectstatic --noinput
 
 # create admin
 #python3 manage.py createsuperuser --username
