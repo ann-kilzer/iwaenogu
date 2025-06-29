@@ -27,7 +27,7 @@ elif os.getenv("TRAMPOLINE_CI", None):
 
     placeholder = (
         f"SECRET_KEY=a\n"
-        f"DATABASE_URL=sqlite://{os.path.join(BASE_DIR, 'db.sqlite3')}"
+        f"DATABASE_URL=postgres://{os.path.join(BASE_DIR, 'db.postgres')}"
     )
     env.read_env(io.StringIO(placeholder))
 # [END_EXCLUDE]
@@ -53,9 +53,6 @@ DEBUG = env("DEBUG")
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env("SECRET_KEY")
-
-
-ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -135,16 +132,6 @@ if os.getenv("USE_CLOUD_SQL_AUTH_PROXY", None):
     DATABASES["default"]["PORT"] = 5432
 
 # [END gaestd_py_django_database_config]
-
-# Use a in-memory sqlite3 database when testing in CI systems
-# TODO(glasnt) CHECK IF THIS IS REQUIRED because we're setting a val above
-if os.getenv("TRAMPOLINE_CI", None):
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
-        }
-    }
 
 
 # Password validation
