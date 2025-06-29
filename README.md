@@ -89,8 +89,8 @@ python manage.py runserver
 ``` sh
 psql
 CREATE DATABASE iwaenogu;
-CREATE USER otto password 'letmeinnow';
-GRANT ALL ON DATABASE iwaenogu TO otto;
+CREATE USER postgres password 'letmeinnow';
+GRANT ALL ON DATABASE iwaenogu TO postgres;
 ```
 
 Exit postgres and run the migrations:
