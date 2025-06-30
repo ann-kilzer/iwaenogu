@@ -1,7 +1,8 @@
 .vscode
 
 __pycache__/
-
+static
+cloud-sql-proxy
 *.pyc
 
 colors/__pycache__*
