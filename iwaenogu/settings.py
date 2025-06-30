@@ -169,7 +169,7 @@ STATICFILES_DIRS = []
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # Turn off in production
-if False:
+if DEBUG:
     LOGGING = {
         "version": 1,
         "disable_existing_loggers": False,
