@@ -95,7 +95,6 @@ TEMPLATES = [
 WSGI_APPLICATION = "iwaenogu.wsgi.application"
 
 
-# [START gaestd_py_django_csrf]
 # SECURITY WARNING: It's recommended that you use this when
 # running in production. The URL will be known once you first deploy
 # to App Engine. This code takes the URL and converts it to both these settings formats.
@@ -110,11 +109,9 @@ if APPENGINE_URL:
     SECURE_SSL_REDIRECT = True
 else:
     ALLOWED_HOSTS = ["*"]
-# [END gaestd_py_django_csrf]
 
 # https://github.com/GoogleCloudPlatform/python-docs-samples/blob/main/appengine/standard_python3/django/mysite/settings.py
 # Database
-# [START gaestd_py_django_database_config]
 # Use django-environ to parse the connection string
 DATABASES = {"default": env.db()}
 
@@ -122,8 +119,6 @@ DATABASES = {"default": env.db()}
 if os.getenv("USE_CLOUD_SQL_AUTH_PROXY", None):
     DATABASES["default"]["HOST"] = "127.0.0.1"
     DATABASES["default"]["PORT"] = 5432
-
-# [END gaestd_py_django_database_config]
 
 
 # Password validation
