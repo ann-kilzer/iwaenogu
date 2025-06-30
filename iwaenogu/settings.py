@@ -94,12 +94,14 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "iwaenogu.wsgi.application"
 
+LOCAL = env("LOCAL", default=False)
 
 # SECURITY WARNING: It's recommended that you use this when
 # running in production. The URL will be known once you first deploy
 # to App Engine. This code takes the URL and converts it to both these settings formats.
 APPENGINE_URL = env("APPENGINE_URL", default=None)
-if APPENGINE_URL:
+if not LOCAL and APPENGINE_URL:
+    print("Appengine URL")
     # Ensure a scheme is present in the URL before it's processed.
     if not urlparse(APPENGINE_URL).scheme:
         APPENGINE_URL = f"https://{APPENGINE_URL}"
@@ -107,8 +109,14 @@ if APPENGINE_URL:
     ALLOWED_HOSTS = [urlparse(APPENGINE_URL).netloc]
     CSRF_TRUSTED_ORIGINS = [APPENGINE_URL]
     SECURE_SSL_REDIRECT = True
-else:
-    ALLOWED_HOSTS = ["*"]
+
+if LOCAL:
+    print("Local development")
+    ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
+    HOST_SCHEME = "http://"
+    SECURE_PROXY_SSL_HEADER = None
+    SECURE_SSL_REDIRECT = False
+    SESSION_COOKIE_SECURE = False
 
 # https://github.com/GoogleCloudPlatform/python-docs-samples/blob/main/appengine/standard_python3/django/mysite/settings.py
 # Database
@@ -117,6 +125,7 @@ DATABASES = {"default": env.db()}
 
 # If the flag as been set, configure to use proxy
 if os.getenv("USE_CLOUD_SQL_AUTH_PROXY", None):
+    print("Using Cloud SQL Auth Proxy")
     DATABASES["default"]["HOST"] = "127.0.0.1"
     DATABASES["default"]["PORT"] = 5432
 
@@ -144,13 +153,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
 LANGUAGE_CODE = "en-us"
-
 TIME_ZONE = "UTC"
-
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
 
 
@@ -162,3 +167,24 @@ STATIC_URL = "/static/"
 STATICFILES_DIRS = []
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# Turn off in production
+if False:
+    LOGGING = {
+        "version": 1,
+        "disable_existing_loggers": False,
+        "handlers": {
+            "file": {
+                "level": "DEBUG",
+                "class": "logging.FileHandler",
+                "filename": "/tmp/debug.log",
+            },
+        },
+        "loggers": {
+            "django": {
+                "handlers": ["file"],
+                "level": "DEBUG",
+                "propagate": True,
+            },
+        },
+    }
