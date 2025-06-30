@@ -3,9 +3,12 @@ Django settings for iwaenogu project.
 
 """
 
+import io
 import os
+from urllib.parse import urlparse
 
 import environ
+from google.cloud import secretmanager
 
 # SECURITY WARNING: don't run with debug turned on in production!
 env = environ.Env(DEBUG=(bool, True))
@@ -13,7 +16,7 @@ env = environ.Env(DEBUG=(bool, True))
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# [START gaestd_py_django_secret_config]
+
 env = environ.Env(DEBUG=(bool, False))
 env_file = os.path.join(BASE_DIR, ".env")
 
@@ -21,16 +24,6 @@ if os.path.isfile(env_file):
     # Use a local secret file, if provided
 
     env.read_env(env_file)
-# [START_EXCLUDE]
-elif os.getenv("TRAMPOLINE_CI", None):
-    # Create local settings if running with CI, for unit testing
-
-    placeholder = (
-        f"SECRET_KEY=a\n"
-        f"DATABASE_URL=postgres://{os.path.join(BASE_DIR, 'db.postgres')}"
-    )
-    env.read_env(io.StringIO(placeholder))
-# [END_EXCLUDE]
 elif os.environ.get("GOOGLE_CLOUD_PROJECT", None):
     # Pull secrets from Secret Manager
     project_id = os.environ.get("GOOGLE_CLOUD_PROJECT")
@@ -43,7 +36,6 @@ elif os.environ.get("GOOGLE_CLOUD_PROJECT", None):
     env.read_env(io.StringIO(payload))
 else:
     raise Exception("No local .env or GOOGLE_CLOUD_PROJECT detected. No secrets found.")
-# [END gaestd_py_django_secret_config]
 
 # False if not in os.environ because of casting above
 DEBUG = env("DEBUG")
