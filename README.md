@@ -73,7 +73,7 @@ The following sources were very helpful when creating this project. ありがと
 And here we start the code parts...
 
 ### Requirements
-- Python 3.7
+- Python 3.13
 - Django
 
 
@@ -97,4 +97,18 @@ Exit postgres and run the migrations:
 
 ``` sh
 python manage.py migrate
+```
+
+
+## Google CloudRun Deploy
+
+```
+# Build and migrate
+gcloud builds submit --config cloudmigrate.yaml \
+    --substitutions _REGION=asia-northeast1
+
+# deploy the service
+gcloud run deploy iwaenogu \
+    --region asia-northeast1 \
+    --image asia-northeast1-docker.pkg.dev/iwaenogu/iwaenogu-repository/iwaenogu
 ```
