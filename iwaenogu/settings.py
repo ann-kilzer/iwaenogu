@@ -98,8 +98,7 @@ LOCAL = env("LOCAL", default=False)
 
 # SECURITY WARNING: It's recommended that you use this when
 # running in production. The URL will be known once you first deploy
-# to App Engine. This code takes the URL and converts it to both these settings formats.
-APPENGINE_URL = env("APPENGINE_URL", default=None)
+# to CloudRun. This code takes the URL and converts it to both these settings formats.
 CLOUDRUN_SERVICE_URLS = env("CLOUDRUN_SERVICE_URLS", default=None)
 if LOCAL:
     print("Local development")
@@ -108,16 +107,8 @@ if LOCAL:
     SECURE_PROXY_SSL_HEADER = None
     SECURE_SSL_REDIRECT = False
     SESSION_COOKIE_SECURE = False
-elif APPENGINE_URL:
-    print("GCP Environment")
-    # Ensure a scheme is present in the URL before it's processed.
-    if not urlparse(APPENGINE_URL).scheme:
-        APPENGINE_URL = f"https://{APPENGINE_URL}"
-
-    ALLOWED_HOSTS = [urlparse(APPENGINE_URL).netloc]
-    CSRF_TRUSTED_ORIGINS = [APPENGINE_URL]
-    SECURE_SSL_REDIRECT = True
 elif CLOUDRUN_SERVICE_URLS:
+    print("CloudRun deployment")
     CSRF_TRUSTED_ORIGINS = env("CLOUDRUN_SERVICE_URLS").split(",")
     # Remove the scheme from URLs for ALLOWED_HOSTS
     ALLOWED_HOSTS = [urlparse(url).netloc for url in CSRF_TRUSTED_ORIGINS]
