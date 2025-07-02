@@ -1,0 +1,25 @@
+steps:
+  - id: "Build Container Image"
+    name: buildpacksio/pack
+    args: ["build", "${_IMAGE_NAME}", "--builder=gcr.io/buildpacks/builder:google-22"]
+
+  - id: "Push Container Image"
+    name: "gcr.io/cloud-builders/docker"
+    args: ["push", "${_IMAGE_NAME}"]
+
+options:
+  dynamicSubstitutions: true
+
+substitutions:
+  #_INSTANCE_NAME: iwaenogu
+  #_CLOUD_SQL_CONNECTION_NAME: ${PROJECT_ID}:${_REGION}:${_INSTANCE_NAME}
+  _REGION: asia-northeast1
+  _SERVICE_NAME: iwaenogu
+  #_SECRET_SETTINGS_NAME: django_settings
+  _ARTIFACT_REGISTRY: iwaenogu-repository
+  _IMAGE_NAME: ${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_ARTIFACT_REGISTRY}/${_SERVICE_NAME}
+  #_ADMIN_EMAIL: akilzer@gmail.com
+  #_ADMIN_PASSWORD_NAME: superuser_password
+
+images:
+  - "${_IMAGE_NAME}"
